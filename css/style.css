@@ -175,11 +175,6 @@ h1{
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-
-
-
-
 .form__cuerpo{
     display: flex;
     align-items: center;
@@ -221,6 +216,11 @@ footer{
 }
 .redes{
     width: 25px;
+    transition: all 3s;
+}
+.redes:hover{
+    height: 50px;
+    transform: scale(2, 2);
 }
 /* Media Querie de Celular */
 @media (min-width: 320px) and (max-width: 575px){
@@ -230,14 +230,17 @@ footer{
         width: auto;
     }
     .header__lista {
+        display: flex;
         flex-direction: column;
         flex-grow: 0;
         justify-content: center;
         align-items: center;
+        margin-bottom: 15px;
+        font-size: 25px;
     }
     .header__navegacion { 
         flex-direction: column;
-        height: 30vh;
+        height: auto;
     }
     /* Index */
     .image__container{
@@ -253,8 +256,8 @@ footer{
     .index__parrafo{
         display: flex;
         flex-direction: column;
-        width: 100vh;
-        height: 35vw;
+        width: 90vh;
+        height: 60vw;
         font-size: 20px;
     }
     .image__index{
