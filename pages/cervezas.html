@@ -8,25 +8,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>29295 - Cervezas</title>
 </head>
 <body>
     <header><!-- Encabezado: incluye la barra de navegacion y el logo -->
-        <nav class="header__navegacion"><!-- Barra de navegacion/Menu -->
-            <ul class="header__lista">
-                <li class="header__item"> <a href="../index.html"> Inicio</a></li>
-                <li class="header__item"> <a href="carta.html"> Carta</a></li>
-                <li class="header__item"> <a href="#"> Cervezas</a></li>
-                <li class="header__item"> <a href="contacto.html"> Contacto</a></li>
-                <li class="header__item"> <a href="eventos.html"> Eventos </a></li>
+        <nav class="navbar navbar-expand-lg header header__item">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carta.html">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Cervezas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
             </ul>
-        </nav>
+            </div>
+        </div>
+    </nav>
     </header>
     <main><!-- Todo el contenido de la pagina que no sea header o footer -->
         <h1>
             Cervezas
         </h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../resources/honey.jpg" class="carrousel__medida d-block w-100" alt="Descripción cerveza Honey">
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/scottish.jpg" class="carrousel__medida d-block w-100" alt="Descripción cerveza Scottish">
+                </div>
+                <div class="carousel-item">
+                    <img src="../resources/porter.jpg" class="carrousel__medida d-block w-100" alt="Descripción cerveza Porter">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <section>
             <img class="image__cerveza" src="../resources/cerveza-chop.jpg" alt="Foto de Chop de Cerveza">
             <span>Cerveza de Trigo</span><input class="button__masinfo" type="button" value="Mas Info">
@@ -44,5 +91,7 @@
         <img class="redes"src="../resources/whatsapp-square-brands.svg" alt="Icono WhatsApp">
         <p>since 1986 | Todas las birras reservadas | Las mesas a reservar ®</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
