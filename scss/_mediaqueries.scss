@@ -1,0 +1,245 @@
+/* Media Querie de Celular */
+@media (min-width: 320px) and (max-width: 575px){
+    /* Navegacion */
+    header {
+        height: auto;
+        width: auto;
+    }
+    .header__lista {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .header__navegacion { 
+        flex-direction: column;
+        height: auto;
+    }
+    /* Index */
+    .image__container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .image__local{
+        display: flex;
+        height: 100vw;
+        margin: 0px;
+    }
+    .index__parrafo{
+        display: flex;
+        flex-direction: column;
+        width: 90vh;
+        height: 60vw;
+        font-size: 20px;
+    }
+    .image__index{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+        height: 50vh;
+        width: 25vh;
+        padding: 16px;
+    }
+    .container__1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .container__2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100vh;
+        justify-content: center;
+    }
+    .image__index2{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 70vh;
+        height: 70vh;
+    }
+    /* Carta */
+    .carta__orden{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        row-gap: 15px;
+    }
+    .pizza{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 50vh;
+    }
+    .papas{
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+    .tomar{
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+    }
+    .sandwich{
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+    }
+    .burger{
+        grid-column: 1/2;
+        grid-row: 5/6;
+
+    }
+    .carnes{
+        grid-column: 1/2;
+        grid-row: 6/7;
+
+    }
+    .picar{
+        grid-column: 1/2;
+        grid-row: 7/8;
+
+    }
+    .pastas{
+        grid-column: 1/2;
+        grid-row: 8/9;
+
+    }
+    .logo{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    /* Footer */
+    .footer__derechos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+/* Media Querie de Tablet */
+@media (min-width: 576px) and (max-width: 992px){
+    /* Navegacion */
+    header {
+        height: auto;
+    }
+    .header__lista {
+        flex-grow: 1;
+        align-content: center;
+    }
+    .header__navegacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    /* Index */
+    .image__container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .image__local{
+        display: flex;
+        height: 100vw;
+        margin: 0px;
+    }
+    .index__parrafo{
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        height: 35vw;
+        font-size: 20px;
+    }
+    .image__index{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+        height: 60vh;
+        width: 35vh;
+        padding: 16px;
+    }
+    .container__1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .container__2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100vh;
+        justify-content: center;
+    }
+    .image__index2{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 70vh;
+        height: 70vh;
+    }
+    /* Carta */
+    .carta__orden{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        row-gap: 15px;
+    }
+    .pizza{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 50vh;
+    }
+    .papas{
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+    .tomar{
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+    }
+    .sandwich{
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+    }
+    .burger{
+        grid-column: 1/2;
+        grid-row: 5/6;
+
+    }
+    .carnes{
+        grid-column: 1/2;
+        grid-row: 6/7;
+
+    }
+    .picar{
+        grid-column: 1/2;
+        grid-row: 7/8;
+
+    }
+    .pastas{
+        grid-column: 1/2;
+        grid-row: 8/9;
+
+    }
+    .logo{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}

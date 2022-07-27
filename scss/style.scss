@@ -1,0 +1,232 @@
+@import "footer";
+@import "mediaqueries";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+header{
+    background-color: #42423fcf;
+    padding: 10px;
+    &__navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        height: 50px;
+    
+    }
+    &__lista{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+        padding: 0 16px;
+        flex-grow: 1;
+    }
+    &__item{
+        display: inline;
+    }
+    &__item a{
+        font-family: 'Roboto', sans-serif;
+        color: rgb(223, 166, 24);
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+/* Titulo Principal */
+h1{
+    text-align: center;
+    background-color: #42423fcf;
+    padding: 16px;
+}
+/* Pagina Index */
+.image__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    &__local{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+    }
+    &__index{
+        display: flex;
+        align-items: flex-end;
+        width: 15%;
+        height: 15%;
+        padding: 10px;
+    }
+    &__index2{
+        display: flex;
+        justify-content: space-around;
+        height: 250px;
+        margin: 16px;
+        padding: 10px;
+    }
+    &__evento{
+        display: flex;
+        margin: 20px;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.container__1{
+    display: flex;
+    flex-direction: column;
+}
+
+.index__subtitulo{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    &__parrafo{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+        height: 100px;
+        color: chocolate;
+        padding: 16px;
+    }
+}
+
+
+/* Pagina Carta */
+.carta__orden{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: #292927cf;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "pizza papas tomar"
+                        "sandwich burger carnes"
+                        "picar logo pastas";
+}
+.pizza{
+    grid-area: pizza;
+    background-image: url("../resources/Carta-pizzas.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.papas{
+    grid-area: papas;
+    background-image: url("../resources/Carta-especial-papas.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tomar{
+    grid-area: tomar;
+    background-image: url("../resources/Carta-para-tomar.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sandwich{
+    grid-area: sandwich;
+    background-image: url("../resources/Carta-sandwich.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.burger{
+    grid-area: burger;
+    background-image: url("../resources/Carta-burger.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.carnes{
+    grid-area: carnes;
+    background-image: url("../resources/Carta-carnes.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.picar{
+    grid-area: picar;
+    background-image: url("../resources/Carta-para-picar.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo{
+    grid-area: logo;
+    background-image: url("../resources/Logo.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pastas{
+    grid-area: pastas;
+    background-image: url("../resources/Carta-pastas.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.form__cuerpo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    &__mapa{
+        width: 200px;
+        height: 200px;
+    }
+    &__style{
+        border: 2px solid #1C6EA4;
+        border-radius: 8px 8px 8px 8px;
+    }
+    &__nombre{
+        margin: 16px;
+    }
+    &__email{
+        margin: 16px;
+    }
+    &__textarea{
+        margin: 16px;
+    }
+    &__button{
+        margin: 16px;
+    }
+}
+
+.image__cerveza{
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+.button__masinfo{
+    margin: 10px;
+}
+
+
+.redes{
+    width: 25px;
+    transition: all 1s;
+    &:hover{
+        height: 50px;
+        transform: scale(2, 2);
+    }
+}
+.carrousel__medida{
+    height: 500px;
+}
