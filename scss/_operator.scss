@@ -1,0 +1,25 @@
+/* MAPS */
+$redes:(
+    facebook: blue,
+    instagram: rgb(231, 65, 204),
+    whatsapp: green
+);
+
+/* EACH */
+@each $name, $color in $redes {
+    .color-#{$name}{
+        background-color: #{$color};
+    }   
+}
+/* EXTEND */
+.background-grid{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* MIXIN */
+@mixin flex($flex-direction, $justify, $align){
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}

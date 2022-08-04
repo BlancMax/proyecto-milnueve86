@@ -1,11 +1,28 @@
-footer {
-  background-color: grey;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-align: center;
-  height: 80px;
-  padding: 10px; }
+body {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23080503' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23100a05' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23181008' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2320150a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23281A0D' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
 
+/* COLORES */
+/* MAPS */
+/* EACH */
+.color-facebook {
+  background-color: blue; }
+
+.color-instagram {
+  background-color: #e741cc; }
+
+.color-whatsapp {
+  background-color: green; }
+
+/* EXTEND */
+.background-grid, .pizza, .papas, .tomar, .sandwich, .burger, .carnes, .picar, .logo, .pastas {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* MIXIN */
 /* Media Querie de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
   /* Navegacion */
@@ -15,9 +32,9 @@ footer {
   .header__lista {
     display: flex;
     flex-direction: column;
-    flex-grow: 0;
     justify-content: center;
     align-items: center;
+    flex-grow: 0;
     margin-bottom: 15px;
     font-size: 25px; }
   .header__navegacion {
@@ -107,7 +124,7 @@ footer {
     text-align: center;
     font-size: 10px; }
   .navbar-toggler {
-    background-color: gray; } }
+    background-color: black; } }
 
 /* Media Querie de Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -200,37 +217,39 @@ footer {
     margin-bottom: 10px;
     padding: 10px; } }
 
-body {
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23080503' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23100a05' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23181008' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2320150a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23281A0D' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover; }
+footer {
+  background-color: grey;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  height: 80px;
+  padding: 10px; }
 
 * {
   margin: 0;
   padding: 0; }
 
 /* Header */
-header {
+.header {
   background-color: black;
   padding: 10px;
   text-align: center; }
-  header__item {
+  .header__item {
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
     height: 50px; }
-  header__lista {
+  .header__lista {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
     text-align: center;
-    padding: 0 16px;
+    padding: 16px;
     flex-grow: 1; }
-  header__item {
+  .header__item {
     display: inline; }
-  header__item a {
+  .header__item a {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     padding: 10px; }
@@ -275,9 +294,8 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   height: 250px;
-  /* margin: 16px; */
-  padding: 25px;
-  }
+  margin: 16px;
+  padding: 25px; }
 
 .image__evento {
   display: flex;
@@ -316,10 +334,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   font-size: 25px;
-  height: f;
+  height: 100px;
   color: chocolate;
-  padding: 16px;
-  }
+  padding: 16px; }
 
 /* Pagina Carta */
 .carta__orden {
@@ -332,66 +349,39 @@ h1 {
 
 .pizza {
   grid-area: pizza;
-  background-image: url("../resources/Carta-pizzas.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-pizzas.jpg"); }
 
 .papas {
   grid-area: papas;
-  background-image: url("../resources/Carta-especial-papas.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-especial-papas.jpg"); }
 
 .tomar {
   grid-area: tomar;
-  background-image: url("../resources/Carta-para-tomar.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-para-tomar.jpg"); }
 
 .sandwich {
   grid-area: sandwich;
-  background-image: url("../resources/Carta-sandwich.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-sandwich.jpg"); }
 
 .burger {
   grid-area: burger;
-  background-image: url("../resources/Carta-burger.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-burger.jpg"); }
 
 .carnes {
   grid-area: carnes;
-  background-image: url("../resources/Carta-carnes.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-carnes.jpg"); }
 
 .picar {
   grid-area: picar;
-  background-image: url("../resources/Carta-para-picar.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-para-picar.jpg"); }
 
 .logo {
   grid-area: logo;
-  background-image: url("../resources/logo-1.webp");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/logo-1.webp"); }
 
 .pastas {
   grid-area: pastas;
-  background-image: url("../resources/Carta-pastas.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-image: url("../resources/Carta-pastas.jpg"); }
 
 .form__cuerpo {
   display: flex;

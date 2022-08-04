@@ -1,13 +1,15 @@
-@import "footer";
 @import "fondo";
+@import "variables";
+@import "operator";
 @import "mediaqueries";
+@import "footer";
 
 *{
     margin: 0;
     padding: 0;
 }
 /* Header */
-header{
+.header{
     background-color: black;
     padding: 10px;
     text-align: center;
@@ -23,7 +25,7 @@ header{
         list-style: none;
         justify-content: center;
         text-align: center;
-        padding: 0 16px;
+        padding: 16px;
         flex-grow: 1;
     }
     &__item{
@@ -136,67 +138,49 @@ h1{
                         "picar logo pastas";
 }
 .pizza{
+    @extend .background-grid;
     grid-area: pizza;
     background-image: url("../resources/Carta-pizzas.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .papas{
+    @extend .background-grid;
     grid-area: papas;
     background-image: url("../resources/Carta-especial-papas.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .tomar{
+    @extend .background-grid;
     grid-area: tomar;
     background-image: url("../resources/Carta-para-tomar.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .sandwich{
+    @extend .background-grid;
     grid-area: sandwich;
     background-image: url("../resources/Carta-sandwich.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .burger{
+    @extend .background-grid;
     grid-area: burger;
     background-image: url("../resources/Carta-burger.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .carnes{
+    @extend .background-grid;
     grid-area: carnes;
     background-image: url("../resources/Carta-carnes.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .picar{
+    @extend .background-grid;
     grid-area: picar;
     background-image: url("../resources/Carta-para-picar.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .logo{
+    @extend .background-grid;
     grid-area: logo;
     background-image: url("../resources/logo-1.webp");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .pastas{
+    @extend .background-grid;
     grid-area: pastas;
     background-image: url("../resources/Carta-pastas.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .form__cuerpo{
     display: flex;
