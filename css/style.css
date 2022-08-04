@@ -61,8 +61,8 @@ footer {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 70vh;
-    height: 70vh; }
+    height: 45vh;
+    margin: auto; }
   /* Carta */
   .carta__orden {
     height: auto;
@@ -105,7 +105,9 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    font-size: 10px; } }
+    font-size: 10px; }
+  .navbar-toggler {
+    background-color: gray; } }
 
 /* Media Querie de Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -159,6 +161,8 @@ footer {
     margin: auto;
     width: 70vh;
     height: 70vh; }
+  .navbar-toggler {
+    background-color: gray; }
   /* Carta */
   .carta__orden {
     height: auto;
@@ -196,15 +200,22 @@ footer {
     margin-bottom: 10px;
     padding: 10px; } }
 
+body {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23080503' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23100a05' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23181008' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2320150a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23281A0D' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
+
 * {
   margin: 0;
   padding: 0; }
 
 /* Header */
 header {
-  background-color: #42423fcf;
-  padding: 10px; }
-  header__navegacion {
+  background-color: black;
+  padding: 10px;
+  text-align: center; }
+  header__item {
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
@@ -221,14 +232,14 @@ header {
     display: inline; }
   header__item a {
     font-family: 'Roboto', sans-serif;
-    color: #dfa618;
     text-decoration: none;
     padding: 10px; }
 
 /* Titulo Principal */
 h1 {
   text-align: center;
-  background-color: #42423fcf;
+  background-color: black;
+  color: gold;
   padding: 16px; }
 
 /* Pagina Index */
@@ -236,41 +247,62 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%; }
-  .image__container__local {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    object-fit: cover; }
-  .image__container__logo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding: 10px;
-    width: 150px;
-    height: 150px; }
-  .image__container__index {
-    display: flex;
-    align-items: flex-end;
-    width: 15%;
-    height: 15%;
-    padding: 10px; }
-  .image__container__index2 {
-    display: flex;
-    justify-content: space-around;
-    height: 250px;
-    margin: 16px;
-    padding: 10px; }
-  .image__container__evento {
-    display: flex;
-    margin: 20px;
-    padding: 10px;
-    width: 200px;
-    height: 200px; }
+
+.image__local {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  object-fit: cover; }
+
+.image__logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 10px;
+  width: 150px;
+  height: 150px; }
+
+.image__index {
+  display: flex;
+  align-items: flex-end;
+  width: 15%;
+  height: 15%;
+  padding: 10px; }
+
+.image__index2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 250px;
+  /* margin: 16px; */
+  padding: 25px;
+  }
+
+.image__evento {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  height: 200px; }
+
+.nav-link {
+  color: gold; }
+
+.container-fluid {
+  display: flex;
+  justify-content: center; }
+
+.active {
+  display: flex;
+  background-color: gold; }
 
 .container__1 {
+  display: flex; }
+
+.container__2 {
   display: flex;
-  flex-direction: column; }
+  flex-wrap: wrap; }
 
 .index__subtitulo {
   display: flex;
@@ -279,20 +311,21 @@ h1 {
   padding-top: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 40px; }
-  .index__subtitulo__parrafo {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 25px;
-    height: 100px;
-    color: chocolate;
-    padding: 16px; }
+
+.index__parrafo {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  height: f;
+  color: chocolate;
+  padding: 16px;
+  }
 
 /* Pagina Carta */
 .carta__orden {
   display: grid;
   width: 100vw;
   height: 100vh;
-  background-color: #292927cf;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "pizza papas tomar" "sandwich burger carnes" "picar logo pastas"; }
@@ -348,7 +381,7 @@ h1 {
 
 .logo {
   grid-area: logo;
-  background-image: url("../resources/Logo.jpg");
+  background-image: url("../resources/logo-1.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
