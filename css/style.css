@@ -26,18 +26,18 @@ body {
 /* Media Querie de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
   /* Navegacion */
-  header {
+  .header {
     height: auto;
     width: auto; }
-  .header__lista {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 0;
-    margin-bottom: 15px;
-    font-size: 25px; }
-  .header__navegacion {
+    .header__lista {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 0;
+      margin-bottom: 15px;
+      font-size: 25px; }
+  __navegacion {
     flex-direction: column;
     height: auto; }
   /* Index */
@@ -49,12 +49,6 @@ body {
     display: flex;
     height: 100vw;
     margin: 0px; }
-  .index__parrafo {
-    display: flex;
-    flex-direction: column;
-    width: 90vh;
-    height: 60vw;
-    font-size: 20px; }
   .image__index {
     display: flex;
     flex-direction: row;
@@ -63,6 +57,18 @@ body {
     height: 50vh;
     width: 25vh;
     padding: 16px; }
+  .image__index2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 45vh;
+    margin: auto; }
+  .index__parrafo {
+    display: flex;
+    flex-direction: column;
+    width: 90vh;
+    height: 60vw;
+    font-size: 20px; }
   .container__1 {
     display: flex;
     flex-direction: column;
@@ -74,12 +80,6 @@ body {
     flex-wrap: nowrap;
     width: 100vh;
     justify-content: center; }
-  .image__index2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    height: 45vh;
-    margin: auto; }
   /* Carta */
   .carta__orden {
     height: auto;
@@ -129,15 +129,15 @@ body {
 /* Media Querie de Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
   /* Navegacion */
-  header {
+  .header {
     height: auto; }
-  .header__lista {
-    flex-grow: 1;
-    align-content: center; }
-  .header__navegacion {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start; }
+    .header__lista {
+      flex-grow: 1;
+      align-content: center; }
+    .header__navegacion {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start; }
   /* Index */
   .image__container {
     display: flex;
@@ -147,12 +147,6 @@ body {
     display: flex;
     height: 100vw;
     margin: 0px; }
-  .index__parrafo {
-    display: flex;
-    flex-direction: column;
-    width: 100vh;
-    height: 35vw;
-    font-size: 20px; }
   .image__index {
     display: flex;
     flex-direction: row;
@@ -161,6 +155,18 @@ body {
     height: 60vh;
     width: 35vh;
     padding: 16px; }
+  .image__index2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70vh;
+    height: 70vh; }
+  .index__parrafo {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 35vw;
+    font-size: 20px; }
   .container__1 {
     display: flex;
     flex-direction: column;
@@ -172,12 +178,6 @@ body {
     flex-wrap: nowrap;
     width: 100vh;
     justify-content: center; }
-  .image__index2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 70vh;
-    height: 70vh; }
   .navbar-toggler {
     background-color: gray; }
   /* Carta */
