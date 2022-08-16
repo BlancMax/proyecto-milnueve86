@@ -17,12 +17,20 @@ body {
   background-color: green; }
 
 /* EXTEND */
-.background-grid, .pizza, .papas, .tomar, .sandwich, .burger, .carnes, .picar, .logo, .pastas {
+.background-grid, .pizza, .papas, .tomar, .sandwich, .burger, .carnes, .picar, .logo, .pastas, .honey, .porter, .logo__cerv, .rubia, .scottish {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
 
 /* MIXIN */
+footer {
+  background-color: grey;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  height: 80px;
+  padding: 10px; }
+
 /* Media Querie de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
   /* Navegacion */
@@ -216,14 +224,6 @@ body {
     grid-row: 9/10;
     margin-bottom: 10px;
     padding: 10px; } }
-
-footer {
-  background-color: grey;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-align: center;
-  height: 80px;
-  padding: 10px; }
 
 * {
   margin: 0;
@@ -419,3 +419,32 @@ h1 {
 
 .carrousel__medida {
   height: 500px; }
+
+/* Pagina Cervezas */
+.cerveza__orden {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "honey porter" "logo__cerv" "rubia scottish"; }
+
+.honey {
+  grid-area: honey;
+  background-image: url("../resources/honey1.png"); }
+
+.porter {
+  grid-area: porter;
+  background-image: url("../resources/porter1.png"); }
+
+.logo__cerv {
+  grid-area: logo__cerv;
+  background-image: url("../resources/logo-1.webp"); }
+
+.rubia {
+  grid-area: rubia;
+  background-image: url("../resources/rubia1.png"); }
+
+.scottish {
+  grid-area: scottish;
+  background-image: url("../resources/scottish1.png"); }

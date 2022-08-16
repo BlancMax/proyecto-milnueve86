@@ -1,8 +1,9 @@
 @import "fondo";
+@import "cervezas";
 @import "variables";
 @import "operator";
-@import "mediaqueries";
 @import "footer";
+@import "mediaqueries";
 
 *{
     margin: 0;
@@ -226,3 +227,40 @@ h1{
 .carrousel__medida{
     height: 500px;
 }
+/* Pagina Cervezas */
+.cerveza__orden{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "honey porter"
+                        "logo__cerv"
+                        "rubia scottish";
+}
+.honey{
+    @extend .background-grid;
+    grid-area: honey;
+    background-image: url("../resources/honey1.png");
+}
+.porter{
+    @extend .background-grid;
+    grid-area: porter;
+    background-image: url("../resources/porter1.png");
+}
+.logo__cerv{
+    @extend .background-grid;
+    grid-area: logo__cerv;
+    background-image: url("../resources/logo-1.webp");
+}
+.rubia{
+    @extend .background-grid;
+    grid-area: rubia;
+    background-image: url("../resources/rubia1.png");
+}
+.scottish{
+    @extend .background-grid;
+    grid-area: scottish;
+    background-image: url("../resources/scottish1.png");
+}
+
