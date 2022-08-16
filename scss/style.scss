@@ -232,21 +232,29 @@ h1{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "honey porter"
-                        "logo__cerv"
-                        "rubia scottish";
+    grid-template-areas: "honey honey__cont porter"
+                        "porter__cont logo__cerv rubia"
+                        "rubia__cont scottish scottish__cont";
 }
 .honey{
     @extend .background-grid;
     grid-area: honey;
     background-image: url("../resources/honey1.png");
 }
+.honey__cont{
+    @extend .background-grid;
+    grid-area: honey__cont;
+}
 .porter{
     @extend .background-grid;
     grid-area: porter;
     background-image: url("../resources/porter1.png");
+}
+.porter__cont{
+    @extend .background-grid;
+    grid-area: porter__cont;
 }
 .logo__cerv{
     @extend .background-grid;
@@ -258,9 +266,17 @@ h1{
     grid-area: rubia;
     background-image: url("../resources/rubia1.png");
 }
+.rubia__cont{
+    @extend .background-grid;
+    grid-area: rubia__cont;
+}
 .scottish{
     @extend .background-grid;
     grid-area: scottish;
     background-image: url("../resources/scottish1.png");
+}
+.scottish__cont{
+    @extend .background-grid;
+    grid-area: scottish;
 }
 

@@ -17,7 +17,7 @@ body {
   background-color: green; }
 
 /* EXTEND */
-.background-grid, .pizza, .papas, .tomar, .sandwich, .burger, .carnes, .picar, .logo, .pastas, .honey, .porter, .logo__cerv, .rubia, .scottish {
+.background-grid, .pizza, .papas, .tomar, .sandwich, .burger, .carnes, .picar, .logo, .pastas, .honey, .honey__cont, .porter, .porter__cont, .logo__cerv, .rubia, .rubia__cont, .scottish, .scottish__cont {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -425,17 +425,23 @@ h1 {
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "honey porter" "logo__cerv" "rubia scottish"; }
+  grid-template-areas: "honey honey__cont porter" "porter__cont logo__cerv rubia" "rubia__cont scottish scottish__cont"; }
 
 .honey {
   grid-area: honey;
   background-image: url("../resources/honey1.png"); }
 
+.honey__cont {
+  grid-area: honey__cont; }
+
 .porter {
   grid-area: porter;
   background-image: url("../resources/porter1.png"); }
+
+.porter__cont {
+  grid-area: porter__cont; }
 
 .logo__cerv {
   grid-area: logo__cerv;
@@ -445,6 +451,12 @@ h1 {
   grid-area: rubia;
   background-image: url("../resources/rubia1.png"); }
 
+.rubia__cont {
+  grid-area: rubia__cont; }
+
 .scottish {
   grid-area: scottish;
   background-image: url("../resources/scottish1.png"); }
+
+.scottish__cont {
+  grid-area: scottish; }
