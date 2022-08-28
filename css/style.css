@@ -4,263 +4,6 @@ body {
   background-attachment: fixed;
   background-size: cover; }
 
-/* COLORES */
-/* MAPS */
-/* EACH */
-.color-facebook {
-  background-color: blue; }
-
-.color-instagram {
-  background-color: #e741cc; }
-
-.color-whatsapp {
-  background-color: green; }
-
-/* EXTEND */
-.background-grid, .pizza, .papas, .tomar, .sandwich, .burger, .carnes, .picar, .logo, .pastas, .honey, .honey__cont, .porter, .porter__cont, .logo__cerv, .rubia, .rubia__cont, .scottish, .scottish__cont {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-/* MIXIN */
-footer {
-  background-color: grey;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-align: center;
-  height: 80px;
-  padding: 10px; }
-
-/* Media Querie de Celular */
-@media (min-width: 320px) and (max-width: 575px) {
-  /* Navegacion */
-  .header {
-    height: auto;
-    width: auto; }
-    .header__lista {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 0;
-      margin-bottom: 15px;
-      font-size: 25px; }
-  __navegacion {
-    flex-direction: column;
-    height: auto; }
-  /* Index */
-  .image__container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; }
-  .image__local {
-    display: flex;
-    height: 100vw;
-    margin: 0px; }
-  .image__index {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    width: 25vh;
-    padding: 16px; }
-  .image__index2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    height: 45vh;
-    margin: auto; }
-  .index__parrafo {
-    display: flex;
-    flex-direction: column;
-    width: 90vh;
-    height: 60vw;
-    font-size: 20px; }
-  .container__1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center; }
-  .container__2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100vh;
-    justify-content: center; }
-  /* Carta */
-  .carta__orden {
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    row-gap: 15px; }
-  .pizza {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    height: 50vh; }
-  .papas {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .tomar {
-    grid-column: 1/2;
-    grid-row: 3/4; }
-  .sandwich {
-    grid-column: 1/2;
-    grid-row: 4/5; }
-  .burger {
-    grid-column: 1/2;
-    grid-row: 5/6; }
-  .carnes {
-    grid-column: 1/2;
-    grid-row: 6/7; }
-  .picar {
-    grid-column: 1/2;
-    grid-row: 7/8; }
-  .pastas {
-    grid-column: 1/2;
-    grid-row: 8/9; }
-  .logo {
-    grid-column: 1/2;
-    grid-row: 9/10;
-    margin-bottom: 10px;
-    padding: 10px; }
-  /* Footer */
-  .footer__derechos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 10px; }
-  .navbar-toggler {
-    background-color: black; } }
-
-/* Media Querie de Tablet */
-@media (min-width: 576px) and (max-width: 992px) {
-  /* Navegacion */
-  .header {
-    height: auto; }
-    .header__lista {
-      flex-grow: 1;
-      align-content: center; }
-    .header__navegacion {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: start; }
-  /* Index */
-  .image__container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; }
-  .image__local {
-    display: flex;
-    height: 100vw;
-    margin: 0px; }
-  .image__index {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 35vh;
-    padding: 16px; }
-  .image__index2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 70vh;
-    height: 70vh; }
-  .index__parrafo {
-    display: flex;
-    flex-direction: column;
-    width: 100vh;
-    height: 35vw;
-    font-size: 20px; }
-  .container__1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center; }
-  .container__2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100vh;
-    justify-content: center; }
-  .navbar-toggler {
-    background-color: gray; }
-  /* Carta */
-  .carta__orden {
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    row-gap: 15px; }
-  .pizza {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    height: 50vh; }
-  .papas {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .tomar {
-    grid-column: 1/2;
-    grid-row: 3/4; }
-  .sandwich {
-    grid-column: 1/2;
-    grid-row: 4/5; }
-  .burger {
-    grid-column: 1/2;
-    grid-row: 5/6; }
-  .carnes {
-    grid-column: 1/2;
-    grid-row: 6/7; }
-  .picar {
-    grid-column: 1/2;
-    grid-row: 7/8; }
-  .pastas {
-    grid-column: 1/2;
-    grid-row: 8/9; }
-  .logo {
-    grid-column: 1/2;
-    grid-row: 9/10;
-    margin-bottom: 10px;
-    padding: 10px; } }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-/* Header */
-.header {
-  background-color: black;
-  padding: 10px;
-  text-align: center; }
-  .header__item {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-    height: 50px; }
-  .header__lista {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
-    text-align: center;
-    padding: 16px;
-    flex-grow: 1; }
-  .header__item {
-    display: inline; }
-  .header__item a {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    padding: 10px; }
-
-/* Titulo Principal */
-h1 {
-  text-align: center;
-  background-color: black;
-  color: gold;
-  padding: 16px; }
-
 /* Pagina Index */
 .image__container {
   display: flex;
@@ -383,32 +126,271 @@ h1 {
   grid-area: pastas;
   background-image: url("../resources/Carta-pastas.jpg"); }
 
+/* Pagina Cervezas */
+.carrousel__medida {
+  height: 500px; }
+
+.cerveza__orden {
+  display: grid;
+  width: 100vw;
+  height: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr); }
+
+.honey {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-image: url("../resources/honey1.png"); }
+
+.honey__cont {
+  grid-column: 2/3;
+  grid-row: 1/3; }
+
+.porter {
+  grid-column: 5/6;
+  grid-row: 3/5;
+  background-image: url("../resources/porter1.png"); }
+
+.porter__cont {
+  grid-column: 4/5;
+  grid-row: 3/5; }
+
+.logo__cerv {
+  grid-column: 3/4;
+  grid-row: 2/4;
+  background-image: url("../resources/logo-1.webp"); }
+
+.rubia {
+  grid-column: 1/2;
+  grid-row: 3/5;
+  background-image: url("../resources/rubia1.png"); }
+
+.rubia__cont {
+  grid-column: 2/3;
+  grid-row: 3/5; }
+
+.scottish {
+  grid-column: 5/6;
+  grid-row: 1/3;
+  background-image: url("../resources/scottish1.png"); }
+
+.scottish__cont {
+  grid-column: 4/5;
+  grid-row: 1/3; }
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around; }
+
 .form__cuerpo {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
   align-items: center;
-  align-content: center; }
-  .form__cuerpo__mapa {
-    width: 200px;
-    height: 200px; }
-  .form__cuerpo__style {
-    border: 2px solid #1C6EA4;
-    border-radius: 8px 8px 8px 8px; }
-  .form__cuerpo__nombre {
-    margin: 16px; }
-  .form__cuerpo__email {
-    margin: 16px; }
-  .form__cuerpo__textarea {
-    margin: 16px; }
-  .form__cuerpo__button {
-    margin: 16px; }
+  align-content: center;
+  border: solid 2px gold; }
 
-.image__cerveza {
+.form__mapa {
   display: flex;
-  width: 300px;
-  height: 300px; }
+  margin: 10px;
+  width: 400px;
+  height: 400px; }
 
-.button__masinfo {
-  margin: 10px; }
+.form__style {
+  border: 2px solid #1C6EA4;
+  border-radius: 8px 8px 8px 8px; }
+
+.form__nombre {
+  margin: 16px; }
+
+.form__email {
+  margin: 16px; }
+
+.form__textarea {
+  margin: 16px; }
+
+.form__button {
+  margin: 16px; }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.cal-modal-container {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.cal-modal {
+  background: #1D252C;
+  color: #fff;
+  padding: 40px 60px;
+  text-align: center; }
+  .cal-modal h3 {
+    font-size: 37px;
+    font-weight: 900;
+    margin: 0 0 1rem; }
+
+#calendar {
+  display: inline-block; }
+  #calendar .placeholder {
+    display: none;
+    width: 300px; }
+  #calendar .flatpickr-calendar {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    top: 0; }
+  #calendar .flatpickr-innerContainer {
+    overflow: visible; }
+    #calendar .flatpickr-innerContainer .flatpickr-weekdays {
+      overflow: visible; }
+  #calendar .flatpickr-months .flatpickr-month {
+    color: inherit;
+    margin-bottom: 10px; }
+  #calendar .flatpickr-months .flatpickr-current-month {
+    font-size: 16px; }
+  #calendar .flatpickr-months .numInputWrapper {
+    display: none; }
+  #calendar .flatpickr-prev-month, #calendar .flatpickr-next-month {
+    top: calc(50% - 23px); }
+    #calendar .flatpickr-prev-month svg, #calendar .flatpickr-next-month svg {
+      height: 46px;
+      width: 46px; }
+      #calendar .flatpickr-prev-month svg path, #calendar .flatpickr-next-month svg path {
+        fill: #3DAE2B; }
+  #calendar .flatpickr-prev-month {
+    left: -60px; }
+  #calendar .flatpickr-next-month {
+    right: -60px; }
+
+.flatpickr-weekdays .flatpickr-weekdaycontainer {
+  max-width: 307.875px;
+  padding: 0 10px;
+  position: relative; }
+  .flatpickr-weekdays .flatpickr-weekdaycontainer::after {
+    content: '';
+    background: #343F48;
+    position: absolute;
+    top: -32px;
+    bottom: -230px;
+    right: 0;
+    width: 1px; }
+  .flatpickr-weekdays .flatpickr-weekdaycontainer:last-child::after {
+    content: none; }
+  .flatpickr-weekdays .flatpickr-weekdaycontainer .flatpickr-weekday {
+    color: #fff;
+    font-weight: 700; }
+
+.dayContainer {
+  box-shadow: none;
+  padding: 0 10px;
+  position: static; }
+  .dayContainer:last-child::after {
+    content: none; }
+
+.flatpickr-day {
+  background: #fff;
+  border: 0;
+  color: #1D252C;
+  font-weight: 500;
+  transition: color .1s, background .1s; }
+  .flatpickr-day:hover {
+    background: #3DAE2B;
+    color: #fff; }
+  .flatpickr-day.flatpickr-disabled, .flatpickr-day.flatpickr-disabled:hover {
+    background: none;
+    color: #fff;
+    cursor: default; }
+  .flatpickr-day.selected:not(.hidden), .flatpickr-day.selected:not(.hidden):hover, .flatpickr-day.selected:not(.hidden):focus {
+    background: #37A628;
+    color: #fff; }
+  .flatpickr-day.nextMonthDay, .flatpickr-day.prevMonthDay {
+    background: none;
+    color: rgba(207, 210, 211, 0.1) !important;
+    cursor: default;
+    visibility: visible; }
+
+.calendar-events {
+  display: block;
+  justify-content: space-around;
+  margin-top: 30px;
+  min-height: 36px; }
+  @media screen and (min-width: 992px) {
+    .calendar-events {
+      display: flex;
+      justify-content: space-around; } }
+
+.event {
+  font-size: 29px; }
+  .event .date {
+    color: #fff;
+    font-weight: 600; }
+  .event .location {
+    color: #3DAE2B;
+    font-weight: 800;
+    letter-spacing: -.8px; }
+
+.image__logoc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 16px;
+  width: 50vw;
+  height: 30vh; }
+
+/* COLORES */
+/* MAPS */
+/* EACH */
+.color-facebook {
+  background-color: blue; }
+
+.color-instagram {
+  background-color: #e741cc; }
+
+.color-whatsapp {
+  background-color: green; }
+
+/* EXTEND */
+.background-grid, .pizza, .papas, .tomar, .sandwich, .burger, .carnes, .picar, .logo, .pastas, .honey, .honey__cont, .porter, .porter__cont, .logo__cerv, .rubia, .rubia__cont, .scottish, .scottish__cont {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/* MIXIN */
+.form-label {
+  color: gold; }
+
+.btn {
+  margin: 5px;
+  background-color: black;
+  border: solid gold;
+  color: gold; }
+
+.span__cerv {
+  color: gold; }
+
+footer {
+  background-color: grey;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  height: 80px;
+  padding: 10px; }
 
 .redes {
   width: 25px;
@@ -417,46 +399,280 @@ h1 {
     height: 50px;
     transform: scale(2, 2); }
 
-.carrousel__medida {
-  height: 500px; }
+/* Media Querie de Celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* Navegacion */
+  .header {
+    height: auto;
+    width: auto; }
+    .header__lista {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 0;
+      margin-bottom: 15px;
+      font-size: 25px; }
+  __navegacion {
+    flex-direction: column;
+    height: auto; }
+  .navbar-toggler {
+    background-color: gray; }
+  /* Index */
+  .image__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .image__local {
+    display: flex;
+    height: 100vw;
+    margin: 0px; }
+  .image__index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 25vh;
+    padding: 16px; }
+  .image__index2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: auto; }
+  .index__parrafo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    font-size: 20px; }
+  .container__1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+  .container__2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vh;
+    justify-content: center; }
+  /* Carta */
+  .carta__orden {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 15px; }
+  .pizza {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 50vh; }
+  .papas {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .tomar {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .sandwich {
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .burger {
+    grid-column: 1/2;
+    grid-row: 5/6; }
+  .carnes {
+    grid-column: 1/2;
+    grid-row: 6/7; }
+  .picar {
+    grid-column: 1/2;
+    grid-row: 7/8; }
+  .pastas {
+    grid-column: 1/2;
+    grid-row: 8/9; }
+  .logo {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    margin-bottom: 10px;
+    padding: 10px; }
+  /* Cervezas */
+  .cerveza__orden {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 10px;
+    /* Footer */
+    height: auto;
+    }
+    .cerveza__orden .honey {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .cerveza__orden .honey__cont {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 1;
+      }
+    .cerveza__orden .porter {
+      grid-column: 1/2;
+      grid-row: 3/4; }
+    .cerveza__orden .porter__cont {
+      grid-column: 1/2;
+      grid-row: 4/5; }
+    .cerveza__orden .logo__cerv {
+      grid-column: 1/2;
+      grid-row: 5/6; }
+    .cerveza__orden .rubia {
+      grid-column: 1/2;
+      grid-row: 6/7; }
+    .cerveza__orden .rubia__cont {
+      grid-column: 1/2;
+      grid-row: 7/8; }
+    .cerveza__orden .scottish {
+      grid-column: 1/2;
+      grid-row: 8/9; }
+    .cerveza__orden .scottish__cont {
+      grid-column: 1/2;
+      grid-row: 9/10; }
+    .cerveza__orden .footer__derechos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      font-size: 10px; }
+  /* Media Querie de Tablet */ }
 
-/* Pagina Cervezas */
-.cerveza__orden {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "honey honey__cont porter" "porter__cont logo__cerv rubia" "rubia__cont scottish scottish__cont"; }
+@media (min-width: 320px) and (max-width: 575px) and (min-width: 576px) and (max-width: 992px) {
+  /* Navegacion */
+  .header {
+    height: auto; }
+    .header__lista {
+      flex-grow: 1;
+      align-content: center; }
+    .header__navegacion {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start; }
+  .navbar-toggler {
+    background-color: gray; }
+  /* Index */
+  .image__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .image__local {
+    display: flex;
+    height: 100vw;
+    margin: 0px; }
+  .image__index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 35vh;
+    padding: 16px; }
+  .image__index2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: auto;
+    height: auto; }
+  .index__parrafo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    font-size: 20px; }
+  .container__1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+  .container__2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vh;
+    justify-content: center; }
+  /* Carta */
+  .carta__orden {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 15px;
+    margin: 10px; }
+  .pizza {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 50vh; }
+  .papas {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .tomar {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .sandwich {
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .burger {
+    grid-column: 1/2;
+    grid-row: 5/6; }
+  .carnes {
+    grid-column: 1/2;
+    grid-row: 6/7; }
+  .picar {
+    grid-column: 1/2;
+    grid-row: 7/8; }
+  .pastas {
+    grid-column: 1/2;
+    grid-row: 8/9; }
+  .logo {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    margin-bottom: 10px;
+    padding: 10px; } }
 
-.honey {
-  grid-area: honey;
-  background-image: url("../resources/honey1.png"); }
+@media (min-width: 320px) and (max-width: 575px) {
+  .navbar-toggler {
+    background-color: gray; } }
 
-.honey__cont {
-  grid-area: honey__cont; }
+* {
+  margin: 0;
+  padding: 0; }
 
-.porter {
-  grid-area: porter;
-  background-image: url("../resources/porter1.png"); }
+/* Header */
+.header {
+  background-color: black;
+  padding: 10px;
+  text-align: center; }
+  .header__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    height: 50px; }
+  .header__lista {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    flex-grow: 1; }
+  .header__item {
+    display: inline; }
+  .header__item a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 10px; }
 
-.porter__cont {
-  grid-area: porter__cont; }
+/* Titulo Principal */
+h1 {
+  text-align: center;
+  background-color: black;
+  color: gold;
+  padding: 16px; }
 
-.logo__cerv {
-  grid-area: logo__cerv;
-  background-image: url("../resources/logo-1.webp"); }
-
-.rubia {
-  grid-area: rubia;
-  background-image: url("../resources/rubia1.png"); }
-
-.rubia__cont {
-  grid-area: rubia__cont; }
-
-.scottish {
-  grid-area: scottish;
-  background-image: url("../resources/scottish1.png"); }
-
-.scottish__cont {
-  grid-area: scottish; }
+.image__cerveza {
+  display: flex;
+  width: 300px;
+  height: 300px; }

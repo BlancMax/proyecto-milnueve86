@@ -1,5 +1,9 @@
 @import "fondo";
+@import "index";
+@import "carta";
 @import "cervezas";
+@import "contacto";
+@import "eventos";
 @import "variables";
 @import "operator";
 @import "footer";
@@ -45,238 +49,15 @@ h1{
     color: gold;
     padding: 16px;
 }
-/* Pagina Index */
-.image{
-    &__container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    }
-    &__local{
-        display: flex;
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-    }
-    &__logo{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 20px;
-        padding: 10px;
-        width: 150px;
-        height: 150px;
-    }
-    &__index{
-        display: flex;
-        align-items: flex-end;
-        width: 15%;
-        height: 15%;
-        padding: 10px;
-    }
-    &__index2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 250px;
-        margin: 16px;
-        padding: 25px;
-    }
-    &__evento{
-        display: flex;
-        margin: 20px;
-        padding: 10px;
-        width: 200px;
-        height: 200px;
-    }
-}
-.nav-link{
-    color: gold;
-}
-.container-fluid{
-    display: flex;
-    justify-content: center;
-}
-.active{
-    display: flex;
-    background-color: gold;
-}
-.container__1{
-    display: flex;
-}
-.container__2{
-    display: flex;
-    flex-wrap: wrap;
-}
-.index{
-    &__subtitulo{
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        padding-top: 20px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 40px;
-    }
-    &__parrafo{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 25px;
-        height: 100px;
-        color: chocolate;
-        padding: 16px;
-    }
-}
 
-/* Pagina Carta */
-.carta__orden{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "pizza papas tomar"
-                        "sandwich burger carnes"
-                        "picar logo pastas";
-}
-.pizza{
-    @extend .background-grid;
-    grid-area: pizza;
-    background-image: url("../resources/Carta-pizzas.jpg");
-}
-.papas{
-    @extend .background-grid;
-    grid-area: papas;
-    background-image: url("../resources/Carta-especial-papas.jpg");
-}
-.tomar{
-    @extend .background-grid;
-    grid-area: tomar;
-    background-image: url("../resources/Carta-para-tomar.jpg");
-}
-.sandwich{
-    @extend .background-grid;
-    grid-area: sandwich;
-    background-image: url("../resources/Carta-sandwich.jpg");
-}
-.burger{
-    @extend .background-grid;
-    grid-area: burger;
-    background-image: url("../resources/Carta-burger.jpg");
-}
-.carnes{
-    @extend .background-grid;
-    grid-area: carnes;
-    background-image: url("../resources/Carta-carnes.jpg");
-}
-.picar{
-    @extend .background-grid;
-    grid-area: picar;
-    background-image: url("../resources/Carta-para-picar.jpg");
-}
-.logo{
-    @extend .background-grid;
-    grid-area: logo;
-    background-image: url("../resources/logo-1.webp");
-}
-.pastas{
-    @extend .background-grid;
-    grid-area: pastas;
-    background-image: url("../resources/Carta-pastas.jpg");
-}
-.form__cuerpo{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    &__mapa{
-        width: 200px;
-        height: 200px;
-    }
-    &__style{
-        border: 2px solid #1C6EA4;
-        border-radius: 8px 8px 8px 8px;
-    }
-    &__nombre{
-        margin: 16px;
-    }
-    &__email{
-        margin: 16px;
-    }
-    &__textarea{
-        margin: 16px;
-    }
-    &__button{
-        margin: 16px;
-    }
-}
+
+
+
 .image__cerveza{
     display: flex;
     width: 300px;
     height: 300px;
 }
-.button__masinfo{
-    margin: 10px;
-}
-.redes{
-    width: 25px;
-    transition: all 1s;
-    &:hover{
-        height: 50px;
-        transform: scale(2, 2);
-    }
-}
-.carrousel__medida{
-    height: 500px;
-}
-/* Pagina Cervezas */
-.cerveza__orden{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "honey honey__cont porter"
-                        "porter__cont logo__cerv rubia"
-                        "rubia__cont scottish scottish__cont";
-}
-.honey{
-    @extend .background-grid;
-    grid-area: honey;
-    background-image: url("../resources/honey1.png");
-}
-.honey__cont{
-    @extend .background-grid;
-    grid-area: honey__cont;
-}
-.porter{
-    @extend .background-grid;
-    grid-area: porter;
-    background-image: url("../resources/porter1.png");
-}
-.porter__cont{
-    @extend .background-grid;
-    grid-area: porter__cont;
-}
-.logo__cerv{
-    @extend .background-grid;
-    grid-area: logo__cerv;
-    background-image: url("../resources/logo-1.webp");
-}
-.rubia{
-    @extend .background-grid;
-    grid-area: rubia;
-    background-image: url("../resources/rubia1.png");
-}
-.rubia__cont{
-    @extend .background-grid;
-    grid-area: rubia__cont;
-}
-.scottish{
-    @extend .background-grid;
-    grid-area: scottish;
-    background-image: url("../resources/scottish1.png");
-}
-.scottish__cont{
-    @extend .background-grid;
-    grid-area: scottish;
-}
+
+
 

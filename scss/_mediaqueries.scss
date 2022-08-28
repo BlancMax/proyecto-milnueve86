@@ -16,6 +16,9 @@
         flex-direction: column;
         height: auto;
     }
+    .navbar-toggler{
+        background-color: gray;
+    }
     /* Index */
     .image{
         &__container{
@@ -37,17 +40,18 @@
         }
         &__index2{
             display: flex;
+            flex-wrap: nowrap;
             flex-direction: column;
-            margin: auto;
-            height: 45vh;
+            height: auto;
+            width: auto;
             margin: auto;
         }
     }
     .index__parrafo{
         display: flex;
         flex-direction: column;
-        width: 90vh;
-        height: 60vw;
+        width: auto;
+        height: auto;
         font-size: 20px;
     }
     .container{
@@ -80,43 +84,78 @@
     .papas{
         grid-column: 1/2;
         grid-row: 2/3;
-
     }
     .tomar{
         grid-column: 1/2;
         grid-row: 3/4;
-
     }
     .sandwich{
         grid-column: 1/2;
         grid-row: 4/5;
-
     }
     .burger{
         grid-column: 1/2;
         grid-row: 5/6;
-
     }
     .carnes{
         grid-column: 1/2;
         grid-row: 6/7;
-
     }
     .picar{
         grid-column: 1/2;
         grid-row: 7/8;
-
     }
     .pastas{
         grid-column: 1/2;
         grid-row: 8/9;
-
     }
     .logo{
         grid-column: 1/2;
         grid-row: 9/10;
         margin-bottom: 10px;
         padding: 10px;
+    }
+    /* Cervezas */
+    .cerveza__orden{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        row-gap: 10px;
+    .honey{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .honey__cont{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .porter{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .porter__cont{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .logo__cerv{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .rubia{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .rubia__cont{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .scottish{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .scottish__cont{
+        grid-column: 1/2;
+        grid-row: 9/10;
     }
     /* Footer */
     .footer__derechos{
@@ -125,9 +164,6 @@
         justify-content: space-around;
         text-align: center;
         font-size: 10px;
-    }
-    .navbar-toggler{
-        background-color: black;
     }
 }
 /* Media Querie de Tablet */
@@ -144,6 +180,9 @@
             flex-wrap: wrap;
             justify-content: start;
         }
+    }
+    .navbar-toggler{
+        background-color: gray;
     }
     /* Index */
     .image{
@@ -168,15 +207,15 @@
             display: flex;
             flex-direction: column;
             margin: auto;
-            width: 70vh;
-            height: 70vh;
+            width: auto;
+            height: auto;
         }
     }
     .index__parrafo{
         display: flex;
         flex-direction: column;
-        width: 100vh;
-        height: 35vw;
+        width: auto;
+        height: auto;
         font-size: 20px;
     }
     .container{
@@ -194,15 +233,13 @@
             justify-content: center;
         }
     }   
-    .navbar-toggler{
-        background-color: gray;
-    }
     /* Carta */
     .carta__orden{
         height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 1fr);
         row-gap: 15px;
+        margin:10px;
     }
     .pizza{
         grid-column: 1/2;
@@ -250,4 +287,8 @@
         margin-bottom: 10px;
         padding: 10px;
     }
+}
+.navbar-toggler{
+    background-color: gray;
+}
 }

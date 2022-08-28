@@ -1,0 +1,61 @@
+/* Pagina Cervezas */
+.carrousel__medida{
+    height: 500px;
+}
+.cerveza__orden{
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.honey{
+    @extend .background-grid;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url("../resources/honey1.png");
+}
+.honey__cont{
+    @extend .background-grid;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.porter{
+    @extend .background-grid;
+    grid-column: 5/6;
+    grid-row: 3/5;
+    background-image: url("../resources/porter1.png");
+}
+.porter__cont{
+    @extend .background-grid;
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+.logo__cerv{
+    @extend .background-grid;
+    grid-column: 3/4;
+    grid-row: 2/4;
+    background-image: url("../resources/logo-1.webp");
+}
+.rubia{
+    @extend .background-grid;
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background-image: url("../resources/rubia1.png");
+}
+.rubia__cont{
+    @extend .background-grid;
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+.scottish{
+    @extend .background-grid;
+    grid-column: 5/6;
+    grid-row: 1/3;
+    background-image: url("../resources/scottish1.png");
+}
+.scottish__cont{
+    @extend .background-grid;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}

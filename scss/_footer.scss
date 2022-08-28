@@ -6,3 +6,11 @@ footer{
     height: 80px;
     padding: 10px;
 }
+.redes{
+    width: 25px;
+    transition: all 1s;
+    &:hover{
+        height: 50px;
+        transform: scale(2, 2);
+    }
+}

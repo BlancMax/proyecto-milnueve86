@@ -1,0 +1,41 @@
+.contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.form{
+    &__cuerpo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        align-items: center;
+        align-content: center;
+        border: solid 2px gold;
+    }
+    &__mapa{
+        display: flex ;
+        margin: 10px;
+        width: 400px;
+        height: 400px;
+    }
+    &__style{
+        border: 2px solid #1C6EA4;
+        border-radius: 8px 8px 8px 8px;
+    }
+    &__nombre{
+        margin: 16px;
+    }
+    &__email{
+        margin: 16px;
+    }
+    &__textarea{
+        margin: 16px;
+    }
+    &__button{
+        margin: 16px;
+    }
+}
